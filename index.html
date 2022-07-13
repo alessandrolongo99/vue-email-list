@@ -17,7 +17,7 @@
     <div id="root" class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-6">
-                <ul v-if="generationDone" class="list-group text-center">
+                <ul v-if="mails.length >= 10" class="list-group text-center">
                     <li v-for="mail in mails" class="list-group-item">{{mail}}</li>
                 </ul>
             </div>
